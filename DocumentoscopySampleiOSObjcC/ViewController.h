@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DocumentoscopySampleiOSObjcC-Swift.h>
 
 @class ViewController;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CSDocumentoscopyBridgetDelegate>
 
 @property (nonatomic, strong) UINavigationController *customNavigation;
 

@@ -20,10 +20,23 @@
 
 - (IBAction)didTapButton:(id)sender {
     CSDocumentoscopyBridget *sdk = [[CSDocumentoscopyBridget alloc] init];
+    sdk.delegate = self;
     [sdk callSDKWithNavigation: self.customNavigation];
 }
 
-// MARK: - Private Functions
+- (void)didOpen {
+    NSLog(@"CSDocumentoscopy ObjC - SDK Aberto");
+}
 
+- (void)didTapClose {
+    NSLog(@"CSDocumentoscopy ObjC - SDK Fechado");
+}
 
+- (void)didReceiveErrorWithError:(NSString *)error text:(NSString *)text codeError:(NSInteger)codeError {
+    NSLog(@"CSDocumentoscopy ObjC - SDK Error");
+}
+
+- (void)didFinishCaptureWithSessionId:(NSString *)sessionId documentType:(NSString *)documentType {
+    NSLog(@"CSDocumentoscopy ObjC - SDK Fluxo Finalizado");
+}
 @end

@@ -6,8 +6,8 @@ Projeto do SDK de Documentoscopia.
 # Documentação pública
 
 ## Requisitos
-* Versão do sistema operacional iOS: 14.0 ou superior.
-* Versão do projeto Swift 4+: funciona com Xcode superior ao 13.
+* Versão do sistema operacional iOS: 15.0 ou superior.
+* Versão do projeto Swift 4.2+: funciona com Xcode superior ao 13.
 * 18.5mb de espaço em disco.
 
 ## Pacotes internos contidos no CSDocumentoscopySDK
@@ -28,7 +28,7 @@ Para adicionar o SDK ao seu projeto utilizando Cocoapods basta adicionar o segui
 ## Instalação em ambiente de desenvolvimento e testes
 
 ````
-platform :ios, '14.0'
+platform :ios, '15.0'
 
 use_frameworks!
 
@@ -40,7 +40,7 @@ end
 ## Instalação em ambiente de produção
 
 ````
-platform :ios, '14.0'
+platform :ios, '15.0'
 
 use_frameworks!
 

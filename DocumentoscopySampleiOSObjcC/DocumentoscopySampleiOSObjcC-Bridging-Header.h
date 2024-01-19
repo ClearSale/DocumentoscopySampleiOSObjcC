@@ -10,3 +10,10 @@
 - (void)callSDKWithNavigation:(UINavigationController *)navigation;
 @end
 
+
+@protocol CSDocumentoscopyBridgetDelegate <NSObject>
+- (void)didOpen;
+- (void)didTapClose;
+- (void)didReceiveErrorWithError:(NSString *)error text:(NSString *)text codeError:(NSInteger)codeError;
+- (void)didFinishCaptureWithSessionId:(NSString *)sessionId documentType:(NSString *)documentType;
+@end

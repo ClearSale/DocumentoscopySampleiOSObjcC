@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150A3ED82B5A9CCD00912DA8 /* CSDocumentoscopyBridgetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150A3ED72B5A9CCD00912DA8 /* CSDocumentoscopyBridgetDelegate.swift */; };
 		153A7D092B5842AB001334F8 /* CSDocumentoscopyBridget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A7D082B5842AB001334F8 /* CSDocumentoscopyBridget.swift */; };
 		15B8BBF62B5715D600F04371 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BBF52B5715D600F04371 /* AppDelegate.m */; };
 		15B8BBF92B5715D600F04371 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B8BBF82B5715D600F04371 /* SceneDelegate.m */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150A3ED32B5A9A6600912DA8 /* CSDocumentoscopySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CSDocumentoscopySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		150A3ED72B5A9CCD00912DA8 /* CSDocumentoscopyBridgetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDocumentoscopyBridgetDelegate.swift; sourceTree = "<group>"; };
 		153A7D072B5842AB001334F8 /* DocumentoscopySampleiOSObjcC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocumentoscopySampleiOSObjcC-Bridging-Header.h"; sourceTree = "<group>"; };
 		153A7D082B5842AB001334F8 /* CSDocumentoscopyBridget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDocumentoscopyBridget.swift; sourceTree = "<group>"; };
 		15B8BBF12B5715D600F04371 /* DocumentoscopySampleiOSObjcC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentoscopySampleiOSObjcC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +101,7 @@
 				15B8BC022B5715D700F04371 /* LaunchScreen.storyboard */,
 				15B8BC052B5715D700F04371 /* Info.plist */,
 				15B8BC062B5715D700F04371 /* main.m */,
+				150A3ED72B5A9CCD00912DA8 /* CSDocumentoscopyBridgetDelegate.swift */,
 				153A7D082B5842AB001334F8 /* CSDocumentoscopyBridget.swift */,
 				153A7D072B5842AB001334F8 /* DocumentoscopySampleiOSObjcC-Bridging-Header.h */,
 			);
@@ -116,6 +120,7 @@
 		F0B5238DBAAD466254500D9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				150A3ED32B5A9A6600912DA8 /* CSDocumentoscopySDK.framework */,
 				15B8BC0D2B5800B400F04371 /* CSDocumentoscopySDK.framework */,
 				7D0D7B8A2784492880725EEE /* Pods_DocumentoscopySampleiOSObjcC.framework */,
 			);
@@ -238,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150A3ED82B5A9CCD00912DA8 /* CSDocumentoscopyBridgetDelegate.swift in Sources */,
 				15B8BBFC2B5715D600F04371 /* ViewController.m in Sources */,
 				15B8BBF62B5715D600F04371 /* AppDelegate.m in Sources */,
 				15B8BC072B5715D700F04371 /* main.m in Sources */,
@@ -419,7 +425,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +503,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -21,6 +21,10 @@ class CSDocumentoscopyBridget: NSObject {
         static let cpf = "cpf"
     }
         
+    // MARK: - Public Attributes
+
+    @objc public var delegate: CSDocumentoscopyBridgetDelegate?
+    
     // MARK: - Public Functions
 
     @objc public func callSDK(navigation: UINavigationController) {
@@ -40,17 +44,21 @@ class CSDocumentoscopyBridget: NSObject {
 extension CSDocumentoscopyBridget: CSDocumentoscopyDelegate {
     func didOpen() {
         print("CSDocumentoscopy - SDK Aberto")
+        delegate?.didOpen()
     }
     
     func didTapClose() {
         print("CSDocumentoscopy - SDK Fechado")
+        delegate?.didTapClose()
     }
     
     func didReceiveError(error: CSDocumentoscopyError) {
         print("CSDocumentoscopy - SDK Error: " + error.text)
+        delegate?.didReceiveError(error: error.rawValue as NSString, text: error.text as NSString, codeError: error.errorCode)
     }
     
     func didFinishCapture(result: CSDocumentoscopyResult) {
         print("CSDocumentoscopy - SDK Fluxo Finalizado")
+        delegate?.didFinishCapture(sessionId: result.sessionId as NSString, documentType: result.documentType.rawValue as NSString)
     }
 }
